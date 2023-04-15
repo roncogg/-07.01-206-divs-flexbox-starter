@@ -96,7 +96,10 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #000;
+  background-image: url("/grey-crumpled-texture-background.jpg");
+  /* background-repeat: no-repeat; */
+  background-size: auto;
+  /* background-color: #a0a4ad; */
   height: 100%;
   width: 100%;
  }
@@ -105,20 +108,21 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
   padding: 2em;
-  color: #fff;
+  color: #000;
   height: 100%;
   width: auto;
 }
 
 .heading {
-  color: #fff;
+  color: #000;
   font-size: 2.5em;
 }
 
 .para {
-  color: #fff;
+  color: #000;
   line-height: 1.5em;
   font-size: 1.6em;
+  border-bottom: solid 2px #000;
 }
 
 .wrapper {
@@ -126,31 +130,59 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; 
+  border-bottom: solid 2px #000;
+  
 }
- 
-
 
 .div-1,
 .div-2,
-.div-3 {
+.div-3,
+.div-4 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: #000;
   line-height: 1.5em;
   font-size: 1.5em;
   height: auto;
  }
 
+ .contact-image {
+  /* display: inline; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  }
+
+  #github-icon {
+    padding: 0 40px;
+    }
+
+  #linkedin-icon {
+    padding-right: 40px;
+  }
+
+  #email {
+    padding-right: 5px;
+    color: #1b0909;
+  }
+
+  #email:hover {
+    color: dodgerblue;
+  }
  .para span {
     font-family: 'Lora', sans-serif;
     font-size: 1.7em;
-    color: aqua;
+    color: rgba(30, 106, 248, 0.952);
   }
-  
 
+ 
+  
+ 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -335,52 +367,3 @@ body {
   h3 {
     page-break-after: avoid;
   }
-/* } ----------- For screens below 768px-----------
-@media (max-width: 767px) {
-  body {
-    background: black;
-  }
-
-  .wrapper {
-    display: flex;
-  justify-content: center;
-  width: auto;
-  }
-
-  .div-1
-  .div-2 {
-    height: auto;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .div-3 {
-    text-align: center;
-    display: block;
-    width: auto;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-  }
-}
-
-/* ----------- For screens 768px and larger ----------- */
-/* @media (min-width: 768px) {
-  body {
-    background: red;
-  } */
-
-  /* .div-3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
-}
-
-/* ----------- For screens 1200px wide and larger----------- */
-/* @media (min-width: 1200px) {
-  body {
-    background: black;
-  }
-} */ */
